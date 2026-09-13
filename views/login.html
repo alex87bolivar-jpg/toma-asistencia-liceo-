@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liceo Ant. - Inicio de sesión</title>
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+  <main class="login-card">
+
+    <section class="brand-panel">
+      <div class="brand">
+        <div class="logo">
+          <span class="book">◫</span>
+        </div>
+        <span>LICEO ANT.</span>
+      </div>
+
+      <div class="slogan">
+        <h1>Cada<br>Día<br>Cuenta</h1>
+      </div>
+
+      <div class="bottom-slogan">
+        <p>Educación hoy,<br>un mejor mañana.</p>
+        <div class="short-line"></div>
+      </div>
+    </section>
+
+    <section class="form-panel">
+      <div class="form-content">
+        <h2>Inicio sesión</h2>
+        <div class="divider"></div>
+
+        <p class="intro">Ingresa tus datos</p>
+
+        <form>
+          <label for="email">Correo institucional</label>
+          <div class="input-wrapper">
+            <span class="input-icon">@</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="usuario@liceoant.edu.co"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+          <label for="password">Contraseña</label>
+          <div class="input-wrapper">
+            <span class="input-icon lock-icon">♙</span>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Ingresa tu contraseña"
+              autocomplete="current-password"
+              required
+            >
+          </div>
+
+          <button type="submit">Ingresar al sistema</button>
+        </form>
+
+        <div class="forgot">
+          <p>¿Olvidaste tu contraseña?</p>
+          <a href="#">Restablecer</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

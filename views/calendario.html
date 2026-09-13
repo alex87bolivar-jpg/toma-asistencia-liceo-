@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - Estudiante</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../styles/calendario.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- BARRA LATERAL / SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="user-profile">
+                    <div class="avatar-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="user-name">Nombre Estudiante</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="registro-ano.html"><i class="fa-regular fa-user"></i> <span>Registro año</span></a>
+                        </li>
+                        <li>
+                            <a href="clases.html"><i class="fa-regular fa-file-lines"></i> <span>Clases</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Observaciones</span></a>
+                        </li>
+                        <!-- Opción activa -->
+                        <li class="active">
+                            <a href="#"><i class="fa-regular fa-calendar-days"></i> <span>Calendario</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-credit-card"></i> <span>Cuenta</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="help-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>¿Ayuda?</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <h1 class="page-title">Calendario – Estudiante</h1>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Notificaciones">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Menú">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Cuerpo de la vista Calendario -->
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h2>Calendario académico</h2>
+                    <p>Consulta tus fechas importantes y eventos.</p>
+                </section>
+
+                <!-- Grid de 2 columnas: Calendario a la izquierda, Eventos a la derecha -->
+                <div class="calendar-grid">
+                    
+                    <!-- Panel Izquierdo: Widget del Calendario -->
+                    <div class="calendar-card">
+                        <!-- Cabecera del mes -->
+                        <div class="calendar-header">
+                            <button class="cal-nav-btn" aria-label="Mes anterior">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <span class="month-title">Abril 2025</span>
+                            <button class="cal-nav-btn" aria-label="Mes siguiente">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <!-- Grilla de días -->
+                        <div class="calendar-body">
+                            <!-- Días de la semana -->
+                            <div class="day-name">Lun</div>
+                            <div class="day-name">Mar</div>
+                            <div class="day-name">Mié</div>
+                            <div class="day-name">Jue</div>
+                            <div class="day-name">Vie</div>
+                            <div class="day-name">Sáb</div>
+                            <div class="day-name">Dom</div>
+
+                            <!-- Fila 1 -->
+                            <div class="day-number"></div>
+                            <div class="day-number">1</div>
+                            <div class="day-number"></div>
+                            <div class="day-number">1</div>
+                            <div class="day-number">2</div>
+                            <div class="day-number">3</div>
+                            <div class="day-number">4</div>
+
+                            <!-- Fila 2 -->
+                            <div class="day-number">7</div>
+                            <div class="day-number">8</div>
+                            <div class="day-number">7</div>
+                            <div class="day-number">8</div>
+                            <div class="day-number">9</div>
+                            <div class="day-number">10</div>
+                            <div class="day-number">11</div>
+
+                            <!-- Fila 3 -->
+                            <div class="day-number">12</div>
+                            <div class="day-number">13</div>
+                            <div class="day-number">13</div>
+                            <div class="day-number selected">16</div>
+                            <div class="day-number">13</div>
+                            <div class="day-number">17</div>
+                            <div class="day-number">18</div>
+
+                            <!-- Fila 4 -->
+                            <div class="day-number">20</div>
+                            <div class="day-number">21</div>
+                            <div class="day-number">22</div>
+                            <div class="day-number">22</div>
+                            <div class="day-number">23</div>
+                            <div class="day-number">24</div>
+                            <div class="day-number">25</div>
+
+                            <!-- Fila 5 -->
+                            <div class="day-number">28</div>
+                            <div class="day-number">26</div>
+                            <div class="day-number">27</div>
+                            <div class="day-number">29</div>
+                            <div class="day-number">20</div>
+                            <div class="day-number">30</div>
+                            <div class="day-number">1</div>
+                        </div>
+                    </div>
+
+                    <!-- Panel Derecho: Eventos de hoy y Próximos eventos -->
+                    <div class="events-panel">
+                        <!-- Bloque de Eventos de Hoy -->
+                        <div class="card-panel events-card">
+                            <h3 class="panel-title">Eventos de hoy</h3>
+                            <ul class="events-list">
+                                <li class="event-item">
+                                    <span class="event-dot"></span>
+                                    <div class="event-details">
+                                        <span class="event-name">Clase de Matemáticas</span>
+                                        <span class="event-time">7:00 - 8:30</span>
+                                    </div>
+                                </li>
+                                <li class="event-item">
+                                    <span class="event-dot"></span>
+                                    <div class="event-details">
+                                        <span class="event-name">Clase de Lenguaje</span>
+                                        <span class="event-time">9:00 - 10:30</span>
+                                    </div>
+                                </li>
+                                <li class="event-item">
+                                    <span class="event-dot"></span>
+                                    <div class="event-details">
+                                        <span class="event-name">Entrega de tarea</span>
+                                        <span class="event-time">11:00 - 12:00</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Botón/Sección de Próximos eventos -->
+                        <a href="#" class="next-events-btn">
+                            <span>Próximos eventos</span>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

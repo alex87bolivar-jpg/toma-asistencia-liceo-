@@ -1,0 +1,96 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS PARA LA VISTA DE CLASES
+   ========================================== */
+
+/* Barra de Filtros */
+.filters-container {
+    display: flex;
+    gap: 15px;
+    background-color: #ebebeb;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+}
+
+.filter-group label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select:focus {
+    border-color: #999;
+}
+
+/* Tabla de Clases */
+.table-card {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.classes-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.classes-table thead {
+    background-color: #e4e4e4;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.classes-table th {
+    padding: 14px 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.classes-table td {
+    padding: 14px 20px;
+    color: #444;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.classes-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.classes-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Estado / Badge */
+.badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge.active {
+    background-color: #dbdbdb;
+    color: #333;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro año - Estudiante</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../styles/registro-ano.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- BARRA LATERAL / SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="user-profile">
+                    <div class="avatar-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="user-name">Nombre Estudiante</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+                        </li>
+                        <!-- Opción activa -->
+                        <li class="active">
+                            <a href="#"><i class="fa-regular fa-user"></i> <span>Registro año</span></a>
+                        </li>
+                        <li>
+                            <a href="clases.html"><i class="fa-regular fa-file-lines"></i> <span>Clases</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Observaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-calendar-days"></i> <span>Calendario</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-credit-card"></i> <span>Cuenta</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="help-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>¿Ayuda?</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <h1 class="page-title">Registro año – Estudiante</h1>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Notificaciones">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Menú">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Cuerpo de la vista Registro año -->
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h2>Registro año</h2>
+                    <p>Consulta y gestiona tu información académica por año.</p>
+                </section>
+
+                <!-- Grid principal con 2 paneles -->
+                <div class="two-column-grid">
+                    
+                    <!-- Panel Izquierdo: Año actual e información -->
+                    <div class="card-panel">
+                        <div class="filter-group">
+                            <label for="ano-select">Año actual</label>
+                            <select id="ano-select" class="filter-select">
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                            </select>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fa-regular fa-file-lines info-icon"></i>
+                            <p>Aquí podrás ver el estado de tu matrícula, programas y demás información del año en curso.</p>
+                        </div>
+                    </div>
+
+                    <!-- Panel Derecho: Documentos importantes -->
+                    <div class="card-panel">
+                        <h3 class="panel-title">Documentos importantes</h3>
+                        
+                        <div class="documents-list">
+                            <div class="document-item">
+                                <div class="doc-left">
+                                    <i class="fa-regular fa-file-lines doc-icon"></i>
+                                    <span>Constancia de matrícula</span>
+                                </div>
+                                <a href="#" class="download-btn" aria-label="Descargar Constancia de matrícula">
+                                    <i class="fa-solid fa-download"></i>
+                                </a>
+                            </div>
+
+                            <div class="document-item">
+                                <div class="doc-left">
+                                    <i class="fa-regular fa-file-lines doc-icon"></i>
+                                    <span>Horario académico</span>
+                                </div>
+                                <a href="#" class="download-btn" aria-label="Descargar Horario académico">
+                                    <i class="fa-solid fa-download"></i>
+                                </a>
+                            </div>
+
+                            <div class="document-item">
+                                <div class="doc-left">
+                                    <i class="fa-regular fa-file-lines doc-icon"></i>
+                                    <span>Comprobante de pago</span>
+                                </div>
+                                <a href="#" class="download-btn" aria-label="Descargar Comprobante de pago">
+                                    <i class="fa-solid fa-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

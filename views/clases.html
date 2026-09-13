@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases - Estudiante</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="../styles/clases.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- BARRA LATERAL / SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="user-profile">
+                    <div class="avatar-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="user-name">Nombre Estudiante</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-user"></i> <span>Registro año</span></a>
+                        </li>
+                        <!-- Opción activa -->
+                        <li class="active">
+                            <a href="#"><i class="fa-regular fa-file-lines"></i> <span>Clases</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Observaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-calendar-days"></i> <span>Calendario</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-credit-card"></i> <span>Cuenta</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="help-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>¿Ayuda?</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <h1 class="page-title">Clases – Estudiante</h1>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Notificaciones">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Menú">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Cuerpo de la vista Clases -->
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h2>Mis clases</h2>
+                    <p>Consulta las clases en las que estás inscrito.</p>
+                </section>
+
+                <!-- Filtros -->
+                <section class="filters-container">
+                    <div class="filter-group">
+                        <label for="periodo">Periodo</label>
+                        <select id="periodo" class="filter-select">
+                            <option value="2025-1">2025 - 1</option>
+                            <option value="2024-2">2024 - 2</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="programa">Programa</label>
+                        <select id="programa" class="filter-select">
+                            <option value="todos">Todos</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" class="filter-select">
+                            <option value="todas">Todas</option>
+                            <option value="activas">Activas</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Tabla de Clases -->
+                <section class="table-card">
+                    <table class="classes-table">
+                        <thead>
+                            <tr>
+                                <th>Materia</th>
+                                <th>Docente</th>
+                                <th>Horario</th>
+                                <th>Aula</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Matemáticas</td>
+                                <td>Juan Pérez</td>
+                                <td>Lun - Mié 7:00 - 8:30</td>
+                                <td>Aula 101</td>
+                                <td><span class="badge active">Activa</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lenguaje</td>
+                                <td>Ana Gómez</td>
+                                <td>Mar - Jue 9:00 - 10:30</td>
+                                <td>Aula 102</td>
+                                <td><span class="badge active">Activa</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ciencias</td>
+                                <td>Carlos Ruiz</td>
+                                <td>Vie 7:00 - 9:00</td>
+                                <td>Aula 103</td>
+                                <td><span class="badge active">Activa</span></td>
+                            </tr>
+                            <tr>
+                                <td>Inglés</td>
+                                <td>Laura Torres</td>
+                                <td>Lun - Mié 10:30 - 12:00</td>
+                                <td>Aula 104</td>
+                                <td><span class="badge active">Activa</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

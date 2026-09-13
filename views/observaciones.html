@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observaciones - Estudiante</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="../styles/observaciones.css">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- BARRA LATERAL / SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <div class="user-profile">
+                    <div class="avatar-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <span class="user-name">Nombre Estudiante</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html"><i class="fa-solid fa-house"></i> <span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="registro-ano.html"><i class="fa-regular fa-user"></i> <span>Registro año</span></a>
+                        </li>
+                        <li>
+                            <a href="clases.html"><i class="fa-regular fa-file-lines"></i> <span>Clases</span></a>
+                        </li>
+                        <!-- Opción activa -->
+                        <li class="active">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Observaciones</span></a>
+                        </li>
+                        <li>
+                            <a href="calendario.html"><i class="fa-regular fa-calendar-days"></i> <span>Calendario</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-credit-card"></i> <span>Cuenta</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="sidebar-bottom">
+                <a href="#" class="help-link">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>¿Ayuda?</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <h1 class="page-title">Observaciones – Estudiante</h1>
+                <div class="header-actions">
+                    <button class="icon-btn" aria-label="Notificaciones">
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button class="icon-btn" aria-label="Menú">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Cuerpo de la vista Observaciones -->
+            <div class="content-body">
+                <section class="welcome-section">
+                    <h2>Observaciones</h2>
+                    <p>Revisa las observaciones y comentarios de tus docentes.</p>
+                </section>
+
+                <!-- Filtros -->
+                <section class="filters-container">
+                    <div class="filter-group">
+                        <label for="periodo">Periodo</label>
+                        <select id="periodo" class="filter-select">
+                            <option value="2025-1">2025 - 1</option>
+                            <option value="2024-2">2024 - 2</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="materia">Materia</label>
+                        <select id="materia" class="filter-select">
+                            <option value="todas">Todas</option>
+                            <option value="matematicas">Matemáticas</option>
+                            <option value="lenguaje">Lenguaje</option>
+                            <option value="ciencias">Ciencias</option>
+                            <option value="ingles">Inglés</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" class="filter-select">
+                            <option value="todas">Todas</option>
+                            <option value="resuelta">Resuelta</option>
+                            <option value="pendiente">Pendiente</option>
+                        </select>
+                    </div>
+                </section>
+
+                <!-- Tabla de Observaciones -->
+                <section class="table-card">
+                    <table class="classes-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Materia</th>
+                                <th>Descripción</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12/03/2025</td>
+                                <td>Matemáticas</td>
+                                <td>Buen desempeño en clase.</td>
+                                <td><span class="badge status-resolved">Resuelta</span></td>
+                            </tr>
+                            <tr>
+                                <td>05/03/2025</td>
+                                <td>Lenguaje</td>
+                                <td>Falta entregar actividad.</td>
+                                <td><span class="badge status-pending">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td>28/02/2025</td>
+                                <td>Ciencias</td>
+                                <td>Participación en clase.</td>
+                                <td><span class="badge status-resolved">Resuelta</span></td>
+                            </tr>
+                            <tr>
+                                <td>20/02/2025</td>
+                                <td>Inglés</td>
+                                <td>Mejorar pronunciación.</td>
+                                <td><span class="badge status-pending">Pendiente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

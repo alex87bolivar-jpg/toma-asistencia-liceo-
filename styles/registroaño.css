@@ -1,0 +1,96 @@
+/* ==========================================
+   ESTILOS ESPECÍFICOS PARA REGISTRO AÑO
+   ========================================== */
+
+/* Grid de dos columnas principales */
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Tarjetas/Paneles contenedores */
+.card-panel {
+    background-color: #ebebeb;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* Caja gris interna de información */
+.info-box {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.info-icon {
+    font-size: 2.2rem;
+    color: #333333;
+    flex-shrink: 0;
+}
+
+.info-box p {
+    font-size: 0.9rem;
+    color: #444444;
+    line-height: 1.4;
+}
+
+/* Lista de Documentos */
+.documents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+}
+
+.doc-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.doc-icon {
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.download-btn {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s;
+}
+
+.download-btn:hover {
+    color: #000000;
+}

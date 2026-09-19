@@ -1,47 +1,17 @@
-const express = require('express');
-const path = require('path');
-const app = express();
 
-const PORT = 3000;
-
-// Servir archivos estáticos globales (CSS, JS)
-app.use(express.static(__dirname));
-app.use('/styles', express.static(path.join(__dirname, 'styles')));
-
-// Ruta principal
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'tomaasistencia.html'));
+const http = require("http");
+ 
+const servidor = http.createServer((req, res) => {
+  if (req.url === "/") {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end("<h1>Inicio</h1><p>Bienvenido a mi proyecto</p>");
+  } else if (req.url === "/nosotros") {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.end("<h1>Nosotros</h1><p>Aquí va la historia del proyecto</p>");
+  } else {
+    res.writeHead(404, { "Content-Type": "text/html" });
+    res.end("<h1>404 - Página no encontrada</h1>");
+  }
 });
-
-// Rutas de la carpeta views
-app.get('/calendario', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'calendario.html'));
-});
-
-app.get('/clases', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'clases.html'));
-});
-
-app.get('/home', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'home.html'));
-});
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'login.html'));
-});
-
-app.get('/observaciones', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'observaciones.html'));
-});
-
-app.get('/registro-ano', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'registroaño.html'));
-});
-
-app.get('/vista-profesor', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'vistaprofesor.html'));
-});
-
-app.listen(PORT, () => {
-    console.log(`Servidor iniciado en http://localhost:${PORT}`);
-});
+ 
+servidor.listen(3000, () => console.log("Servidor en http://localhost:3000"));
